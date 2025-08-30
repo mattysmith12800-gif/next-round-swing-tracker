@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))',
+					light: 'hsl(var(--primary-light))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +54,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Golf-themed colors
+				golf: {
+					DEFAULT: 'hsl(var(--golf-green))',
+					light: 'hsl(var(--golf-green-light))',
+					dark: 'hsl(var(--golf-green-dark))',
+					fairway: 'hsl(var(--fairway-green))',
+					tee: 'hsl(var(--tee-green))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +77,20 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'golf': 'var(--shadow-golf)',
+				'card': 'var(--shadow-card)',
+				'glow': 'var(--shadow-glow)'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-golf': 'var(--gradient-golf)',
+				'gradient-fairway': 'var(--gradient-fairway)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			keyframes: {
 				'accordion-down': {
